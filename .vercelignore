@@ -1,0 +1,4 @@
+node_modules
+packages/hardhat
+packages/nextjs/.next
+packages/nextjs/node_modules
