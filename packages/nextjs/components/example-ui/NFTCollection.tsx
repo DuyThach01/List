@@ -34,6 +34,7 @@ export const NFTCollection = () => {
   const { writeAsync: writeMyNFTAsync } = useScaffoldContractWrite({
     contractName: "MyNFT",
     functionName: "mint",
+    args: [connectedAddress || "0x0000000000000000000000000000000000000000"],
   });
 
   const handleMint = async () => {
