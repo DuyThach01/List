@@ -15,9 +15,6 @@
     "preinstall": "echo Node $(node -v) && (python3 --version || true) && (python3 -m ensurepip -U || true) && (python3 -m pip install --user setuptools wheel || true)"
   },
   "packageManager": "yarn@3.2.3",
-  "resolutions": {
-    "**/node-gyp": "^10.2.0"
-  },
   "dependencies": {
     "@ethersproject/providers": "^5.7.2",
     "@heroicons/react": "^2.0.11",
