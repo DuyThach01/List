@@ -11,7 +11,12 @@
     "format": "prettier --write . '!(node_modules|.next|contracts)/**/*'",
     "check-types": "tsc --noEmit --incremental",
     "vercel": "vercel",
-    "vercel:yolo": "vercel --build-env NEXT_PUBLIC_IGNORE_BUILD_ERROR=true"
+    "vercel:yolo": "vercel --build-env NEXT_PUBLIC_IGNORE_BUILD_ERROR=true",
+    "preinstall": "echo Node $(node -v) && (python3 --version || true) && (python3 -m ensurepip -U || true) && (python3 -m pip install --user setuptools wheel || true)"
+  },
+  "packageManager": "yarn@3.2.3",
+  "resolutions": {
+    "**/node-gyp": "^10.2.0"
   },
   "dependencies": {
     "@ethersproject/providers": "^5.7.2",
