@@ -36,6 +36,9 @@
     "preinstall": "echo Node $(node -v) && (python3 --version || true) && (python3 -m ensurepip -U || true) && (python3 -m pip install --user setuptools wheel || true)"
   },
   "packageManager": "yarn@3.2.3",
+  "engines": {
+    "node": "22.x"
+  },
   "devDependencies": {
     "@typechain/ethers-v6": "^0.5.1",
     "@typechain/hardhat": "^9.1.0",
